@@ -70,7 +70,7 @@ This app is a simple probability calculator using binomial distribution to deter
     }
 ````
 ## 3. Binomial Coefficient Function
-````
+````Kotlin
     /**
      * Calculates the binomial coefficient, also known as "n choose x" (C(n, x)), which represents
      * the number of ways to choose `x` successes (or items) from a total of `n` trials (or items).
