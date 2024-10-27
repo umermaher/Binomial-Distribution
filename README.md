@@ -8,7 +8,7 @@ This app is a simple probability calculator using binomial distribution to deter
 
 ## Alogorithm
 ````Kotlin
-/**
+     /**
      * Calculates the probability of passing more subjects than failing, given a total number of subjects
      * and a pass rate. The function uses a binomial probability distribution to calculate the cumulative
      * probability of passing more than half the subjects.
