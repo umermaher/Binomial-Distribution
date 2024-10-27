@@ -15,6 +15,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -109,14 +110,17 @@ fun MainContent(
             modifier = Modifier.fillMaxWidth(),
             keyboardOptions = KeyboardOptions(
                 imeAction = ImeAction.Done,
-                keyboardType = KeyboardType.Number
+                keyboardType = KeyboardType.Phone
             )
         )
 
         Spacer(modifier = Modifier.height(24.dp))
 
         if(state.probability != null) {
-            Text(text = state.probability.toString())
+            Text(
+                text = state.probability.toString(),
+                style = MaterialTheme.typography.titleLarge
+            )
         }
 
         state.errorRes?.let {
