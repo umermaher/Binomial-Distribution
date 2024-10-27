@@ -1,4 +1,4 @@
-# Probability Calculator
+# Probability Calculator Using Binomial Distribution
 
 ## Introduction
 This app is a simple probability calculator using binomial distribution to help users determine the likelihood of passing a certain number of subjects based on user-defined parameters.
