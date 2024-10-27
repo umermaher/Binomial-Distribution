@@ -29,10 +29,10 @@ This app is a simple probability calculator using binomial distribution to deter
     private fun calculate(n: Int = 5, p: Float = 70f): Double {
         // Probability of passing each subject
         var cumulativeProbability = 0.0
-        val moreThanHalf = (n / 2) + 1
+        val moreThanHalfOfTotalSubjects = (n / 2) + 1
 
         // Calculate probability for passing more than half of the subjects
-        for (x in moreThanHalf..n) {
+        for (x in moreThanHalfOfTotalSubjects..n) {
             cumulativeProbability += binomialProbability(n, x, p.toDouble() / 100)
         }
         // Rounding to four decimal places for clarity
